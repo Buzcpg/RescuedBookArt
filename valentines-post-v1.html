@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Post - Rescued Book Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f5f5f5;
+        }
+
+        .post-container {
+            width: 1080px;
+            height: 1080px;
+            background: linear-gradient(145deg, #fdf6f0 0%, #fce8e0 30%, #f8e1d8 60%, #fdf6f0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Subtle heart decorations */
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 24px;
+            color: rgba(200, 150, 140, 0.3);
+        }
+
+        .heart:nth-child(1) { top: 5%; left: 8%; font-size: 18px; transform: rotate(-15deg); }
+        .heart:nth-child(2) { top: 12%; right: 10%; font-size: 14px; transform: rotate(20deg); }
+        .heart:nth-child(3) { top: 8%; right: 25%; font-size: 20px; transform: rotate(-10deg); }
+        .heart:nth-child(4) { bottom: 18%; left: 6%; font-size: 16px; transform: rotate(15deg); }
+        .heart:nth-child(5) { bottom: 25%; right: 8%; font-size: 22px; transform: rotate(-20deg); }
+        .heart:nth-child(6) { top: 25%; left: 4%; font-size: 12px; transform: rotate(25deg); }
+        .heart:nth-child(7) { bottom: 35%; right: 5%; font-size: 14px; transform: rotate(-5deg); }
+        .heart:nth-child(8) { top: 40%; right: 4%; font-size: 18px; transform: rotate(10deg); }
+
+        /* Main content area */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 50px;
+        }
+
+        /* White mount frame */
+        .frame-outer {
+            background: #ffffff;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(139, 90, 70, 0.15),
+                        0 2px 8px rgba(139, 90, 70, 0.1);
+            margin-bottom: 35px;
+        }
+
+        .frame-inner {
+            border: 1px solid #e8ddd5;
+            padding: 8px;
+            background: #fefefe;
+        }
+
+        .book-image {
+            display: block;
+            max-width: 580px;
+            max-height: 580px;
+            width: auto;
+            height: auto;
+        }
+
+        /* Typography */
+        .back-in-stock {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 600;
+            color: #5c4a3d;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            color: #8b7355;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        /* Logo */
+        .logo {
+            width: 100px;
+            height: auto;
+            opacity: 0.9;
+        }
+
+        /* Valentine accent */
+        .valentine-accent {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            color: #c4a088;
+            letter-spacing: 2px;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <!-- Decorative hearts -->
+        <div class="hearts">
+            <span class="heart">&#9829;</span>
+            <span class="heart">&#9829;</span>
+            <span class="heart">&#9829;</span>
+            <span class="heart">&#9829;</span>
+            <span class="heart">&#9829;</span>
+            <span class="heart">&#9829;</span>
+            <span class="heart">&#9829;</span>
+            <span class="heart">&#9829;</span>
+        </div>
+
+        <div class="valentine-accent">&#9829; VALENTINE'S FAVOURITE &#9829;</div>
+
+        <div class="content">
+            <!-- Framed book page -->
+            <div class="frame-outer">
+                <div class="frame-inner">
+                    <img src="Images/social media/Social Media Images/How much I love you/Up to my toes.jpg"
+                         alt="I love you all the way up to my toes - Guess How Much I Love You"
+                         class="book-image">
+                </div>
+            </div>
+
+            <!-- Text -->
+            <div class="back-in-stock">Back in Stock</div>
+            <div class="tagline">A second life for treasured stories</div>
+
+            <!-- Logo -->
+            <img src="Images/RBA Brand/RBA Square logo with name.png"
+                 alt="Rescued Book Art"
+                 class="logo">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "rescued-book-art-videos",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "remotion studio",
+    "render": "remotion render",
+    "render:ghmily-post": "remotion still src/index.ts GuessHowMuch-Post out/ghmily-post.png",
+    "render:ghmily-reel": "remotion render src/index.ts GuessHowMuch-Reel out/ghmily-reel.mp4",
+    "render:ghmily-square": "remotion render src/index.ts GuessHowMuch-Square out/ghmily-square.mp4",
+    "render:ghmily-all": "npm run render:ghmily-post && npm run render:ghmily-reel && npm run render:ghmily-square"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "typescript": "^5.0.0"
+  }
+}
